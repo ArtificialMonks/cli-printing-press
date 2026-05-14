@@ -16,6 +16,9 @@ example:
 marketing:
   producthunt          Find, monitor, and export Product Hunt launches for launch research, scouting, and competitive tracking without requiring a Product Hunt API application.
 
+media-and-entertainment:
+  rekordbox-amigo      Local-first Rekordbox XML library audit, cleanup, tagging, crate matching, and set-prep assistant for DJs.
+
 monitoring:
   sentry               Error tracking and performance monitoring - projects, issues, events, releases
 
