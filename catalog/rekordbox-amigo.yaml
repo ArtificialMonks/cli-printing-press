@@ -1,0 +1,30 @@
+name: rekordbox-amigo
+display_name: Rekordbox Amigo
+description: Local-first Rekordbox XML library audit, cleanup, tagging, crate matching, and set-prep assistant for DJs.
+category: media-and-entertainment
+tier: community
+verified_date: "2026-05-14"
+homepage: https://rekordbox-amigo-cli.vercel.app
+notes: |
+  Rekordbox Amigo is an Artificial Monks product CLI target built around
+  Rekordbox XML exports, not direct writes to AlphaTheta/Pioneer DJ internal
+  database files. The safe default surface is read-only: audit exported XML,
+  flag broken locations and duplicate imports, suggest tags, match incoming
+  folders/crates, and prepare set-planning prompts.
+
+  The existing TypeScript/Vite prototype in ArtificialMonks/rekordbox-amigo-cli
+  is product evidence and implementation backing. Future work should rehome the
+  CLI under the Printing Press flow so multiple Artificial Monks CLIs share the
+  same generator, verification, publish, and update path instead of creating a
+  separate repo for every early prototype.
+wrapper_libraries:
+  - name: ArtificialMonks/rekordbox-amigo-cli
+    url: https://github.com/ArtificialMonks/rekordbox-amigo-cli
+    language: typescript
+    license: MIT
+    integration_mode: subprocess
+    notes: |
+      Current standalone prototype with browser-local audit and Node CLI
+      commands: audit, tags, set-plan, privacy, and amigo. Treat as legacy
+      source material to absorb into a Press-managed Go CLI, not as the long-term
+      product codebase.
